@@ -49,7 +49,7 @@ Rajendra is nationally recognized for challenging gender norms and opening doors
   },
   {
     name: "Sudha Jain",
-    img: "/members/SudhaJain.webp",
+    img: "/members/image.webp",
     designation: "Social Outreach Coordinator",
     about:
       "An Assistant Professor at Indore School of Social Work for 22 years, Sudha Jain has a rich background as a researcher, labour welfare officer, and child rights advocate. As a member of the Child Welfare Committee, she has helped rehabilitate over 600 vulnerable children. She also serves as a POSH Consultant for multiple organizations, offering training and guidance on workplace sexual harassment laws. With 23 published papers and 15 national seminar presentations, her work bridges academia and frontline social impact. ",
@@ -60,7 +60,10 @@ const BoardM = () => {
 
   return (
     <div>
-      <div className="text-background/80 text-2xl lg:text-4xl font-semibold text-center pb-5">
+      <div
+        className="text-background/80 text-2xl lg:text-4xl font-semibold text-center pb-5"
+        id="board-members"
+      >
         Board Members
       </div>
 

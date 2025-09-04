@@ -5,10 +5,11 @@ import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const navLinks = [
+  { title: "Home", link: "/" },
   { title: "About Us", link: "/aboutUs" },
   { title: "Our Work", link: "/ourWork" },
   { title: "Get Involved", link: "/getInvolved" },
-  { title: "Media", link: "/media" },
+  { title: "Resources", link: "/media" },
   { title: "Contact Us", link: "/contactUs" },
 ];
 
@@ -19,14 +20,14 @@ function NavBar() {
     <div className="max-w-[1440px] mx-auto">
       {/* Fixed Header */}
       <header
-        className={` w-full z-50 flex justify-between items-center px-3 py-3  xl:py-1 ${
+        className={` w-full z-50 flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 ${
           isMenuOpen
             ? "bg-background text-white fixed top-0 left-0"
             : "bg-white"
         }`}
       >
         {/* Logo */}
-        <div className="cursor-pointer flex justify-center items-center">
+        <div className="cursor-pointer flex justify-center items-center gap-2 sm:gap-3">
           <Link href="/">
             <Image
               src="/logo/fevicon_js 2.svg"
@@ -36,6 +37,11 @@ function NavBar() {
               className="transition-all duration-300 hover:scale-105 object-contain"
             />
           </Link>
+          <span
+            className={`${isMenuOpen ? "text-white" : "text-background/80"} text-lg sm:text-xl font-semibold`}
+          >
+            Jan Sahas
+          </span>
         </div>
 
         {/* Desktop Nav */}

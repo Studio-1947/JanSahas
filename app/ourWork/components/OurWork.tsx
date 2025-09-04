@@ -26,7 +26,7 @@ const OurWork = () => {
           <div className="text-3xl sm:text-4xl md:text-6xl font-extrabold">
             Our Work
           </div>
-          <p className="text-xs md:text-sm pt-6 lg:text-lg opacity-90">
+          <p className="text-xs md:text-sm pt-6 lg:text-lg opacity-90 max-w-6xl mx-auto px-4">
             At JSSES, our work is deeply rooted in the communities we serve. We
             implement a range of programs and initiatives designed to address
             the multifaceted challenges faced by marginalized populations in

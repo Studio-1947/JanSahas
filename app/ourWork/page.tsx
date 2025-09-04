@@ -22,8 +22,10 @@ const page = () => {
       <div className="">
         <OurProgram />
       </div>
-      <div className=" px-4 sm:px-6 lg:px-10 pb-5 max-w-[1440px] mx-auto">
+      <div className=" px-4 sm:px-6 lg:px-10 pb-5 max-w-[1440px] mx-auto ">
         <Collab />
+      </div>
+      <div className=" max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 pb-10">
         <Extra
           header={"Direct Referrals"}
           paragraph={`Women's police and juvenile police consistently refer cases requiring mental health counselling, fact-finding for sensitive situations, and legal support.`}

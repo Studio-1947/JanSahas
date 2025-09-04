@@ -19,7 +19,7 @@ const Collab = () => {
     >
       {/* 🌒 Slight dark overlay */}
       <div className="absolute inset-0 bg-black/70 z-0" />
-      <div className="py-7  lg:flex lg:flex-col justify-center items-center  z-10">
+      <div className="py-7  lg:flex lg:flex-col justify-center items-center  z-10 max-w-6xl mx-auto">
         <div className="text-white lg:text-white text-2xl lg:text-4xl font-semibold text-center lg:text-left">
           Collaborations With Law Enforcement
         </div>
