@@ -22,7 +22,7 @@ const StartingImage = () => {
         <div className="absolute inset-0 bg-background/80 z-0" />
 
         {/* 📝 Content */}
-        <div className="relative z-10 px-4 text-white">
+        <div className="relative z-10 px-4 text-white max-w-6xl mx-auto">
           <div className="text-3xl sm:text-4xl md:text-6xl font-extrabold">
             Get Involved
           </div>

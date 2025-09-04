@@ -53,7 +53,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="py-10 bg-gray-300 max-w-[1440px] mx-auto">
+      <div className="py-10 max-w-[1440px] mx-auto">
         <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
           Events
         </div>

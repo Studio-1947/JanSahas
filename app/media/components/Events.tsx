@@ -15,90 +15,75 @@ interface eventType {
 
 const Events = ({ cards }: eventType) => {
   return (
-    <div className="w-full h-full  py-10">
+    <div className="w-full h-full overflow-hidden py-10">
       <Swiper
-        // Responsive padding for top/bottom + left/right
-        // className="py-4 px-2 sm:py-6 sm:px-4 lg:py-8 lg:px-8 "
-        // Offsets for left/right shadow breathing room
-        // slidesOffsetBefore={10} // mobile small
-        // slidesOffsetAfter={10}
         rewind={true}
-        // loopFillGroupWithBlank={false} //  avoids blank spaces
-        // loop={cards.length > 3} // 👈 only loop if we have more than 3 cards
-        // slidesPerGroup={1}
-        // watchSlidesProgress={true}
         modules={[Pagination, Scrollbar, Autoplay]}
-        spaceBetween={20}
-        // loop={true}
-        // loopedSlides={cards.length} //  ensures all slides can loop smoothly,
-        // breakpoints={{
-        //   0: {
-        //     slidesPerView: 1,
-        //     slidesOffsetBefore: 10,
-        //     slidesOffsetAfter: 10,
-        //   }, // Mobile
-        //   640: {
-        //     slidesPerView: 2,
-        //     slidesOffsetBefore: 20,
-        //     slidesOffsetAfter: 20,
-        //   }, // Tablet
-        //   1024: {
-        //     slidesPerView: 3,
-        //     slidesOffsetBefore: 30,
-        //     slidesOffsetAfter: 30,
-        //   }, // Desktop
-        // }}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: true,
-        // }}
-        pagination={{
-          clickable: true,
+        grabCursor={true}
+        spaceBetween={24}
+        centeredSlides={true}
+        roundLengths={true}
+        slidesOffsetBefore={16}
+        slidesOffsetAfter={16}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
-        slidesPerView={1}
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true, hide: true }}
+        slidesPerView={"auto"}
         breakpoints={{
           640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 24,
+            centeredSlides: false,
           },
           768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 28,
+            centeredSlides: false,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+            spaceBetween: 32,
+            centeredSlides: false,
           },
         }}
-        className="mySwiper"
+        className="mySwiper !pb-10"
       >
-        <div className="!py-10  !gap-5 !px-4">
+        <div className="!py-6 !gap-6 !px-4 ">
           {cards.map((card) => (
             <SwiperSlide
               key={card.id}
-              className="rounded-2xl !bg-white mx-auto 
-             !w-[250px] 
-             !h-[350px] "
+              className="group rounded-2xl !bg-white/90 backdrop-blur mx-auto shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 hover:border-black/10 !w-[85%] sm:!w-[46%] md:!w-[31%] lg:!w-[23%] !h-[320px] sm:!h-[360px] overflow-hidden"
             >
-              <div className="duration-300">
-                <div className="relative w-full h-48">
+              <div className="h-full flex flex-col">
+                <div className="relative w-full h-40 sm:h-44 md:h-48 overflow-hidden">
                   <Image
                     src={card.image}
                     alt={card.title}
-                    width={150}
-                    height={300}
-                    className="object-cover rounded-t-lg object-top"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 260px"
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.06]"
                   />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0 opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
                 </div>
-                <div>
+                <div className="flex-1 flex flex-col justify-between">
                   <div className="p-4">
-                    <h3 className="text-lg text-background/80 font-semibold">
+                    <h3 className="text-base sm:text-lg text-background/90 font-semibold leading-snug line-clamp-2">
                       {card.title}
                     </h3>
                   </div>
-                  <div className="mb-4">
-                    <button className="inline-flex cursor-pointer items-center gap-2 px-8 py-[0.9375rem] rounded-[2rem] bg-primary text-white transition-all duration-300 hover:scale-103 md:text-sm font-medium text-xs">
-                      Read more <FaArrowRightLong size={15} />
+                  <div className="p-4 pt-0">
+                    <button
+                      aria-label="Read more about event"
+                      className="inline-flex cursor-pointer items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 rounded-full bg-primary text-white transition-all duration-300 hover:brightness-105 active:scale-[0.98] md:text-sm font-medium text-xs"
+                    >
+                      <span className="transition-transform duration-300 group-hover:-translate-x-0.5">
+                        Read more
+                      </span>
+                      <FaArrowRightLong
+                        size={15}
+                        className="transition-transform duration-300 group-hover:translate-x-1"
+                      />
                     </button>
                   </div>
                 </div>
@@ -117,11 +102,24 @@ const Events = ({ cards }: eventType) => {
           text-align: center;
         }
         .swiper-pagination-bullet {
-          background-color: #primary !important;
-          opacity: 0.4;
+          width: 10px;
+          height: 10px;
+          margin: 0 6px !important;
+          background-color: var(
+            --primary,
+            #0ea5e9
+          ) !important; /* fallback color */
+          opacity: 0.35;
+          transition: transform 200ms ease, opacity 200ms ease,
+            background-color 200ms ease;
+          transform: scale(0.9);
+          border: 2px solid rgba(255, 255, 255, 0.7);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
         }
         .swiper-pagination-bullet-active {
           opacity: 1;
+          transform: scale(1.15);
+          background-color: var(--primary, #0284c7) !important;
         }
       `}</style>
     </div>

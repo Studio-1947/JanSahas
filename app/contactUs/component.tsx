@@ -22,7 +22,7 @@ export function ContactSection14() {
           Contact Us
         </div>
       </section>
-      <section className="max-w-[1440px] mx-auto">
+      <section className="mx-auto max-w-6xl pb-10">
         <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-background/80 text-center px-4">
           We&apos;d love to hear from you! Whether you have questions about our
           work, want to explore collaboration opportunities, or simply wish to
@@ -58,15 +58,18 @@ export function ContactSection14() {
                 <h2 className="title-font font-semibold text-gray-900 text-xs">
                   EMAIL
                 </h2>
-                <a className="text-primary leading-relaxed">
+                <a
+                  className="text-primary leading-relaxed *:hover:underline"
+                  href="mailto:jses.indore@gmail.com"
+                >
                    jses.indore@gmail.com
                 </a>
-                <h2 className="title-font font-semibold text-gray-900 text-xs mt-4">
+                {/* <h2 className="title-font font-semibold text-gray-900 text-xs mt-4">
                   PHONE
                 </h2>
                 <p className="leading-relaxed text-background/80">
                   +91-731-284-5936
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -108,7 +111,7 @@ export function ContactSection14() {
               ></textarea>
             </div>
             <button className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary  text-lg rounded-[2rem] cursor-pointer">
-              Submit
+              <a href="mailto:jses.indore@gmail.com">Submit</a>
             </button>
           </div>
         </div>
