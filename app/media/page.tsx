@@ -3,6 +3,9 @@ import Top from "./components/Top";
 import ImageSlider from "../components/ICarousel";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
+import ReportCard from "../components/ReportCard";
+import { reports } from "@/lib/reports";
+import ReportsPage from "./reports/page";
 
 const images = [
   "/media/slide1.webp",
@@ -25,7 +28,7 @@ const cards = [
     id: 3,
     title: "Khushiyon ka Pitara - Wellbeing centers in the community",
     image: "/media/event3.webp",
-  }
+  },
 ];
 
 const page = () => {
@@ -33,22 +36,26 @@ const page = () => {
     <div className="lg:pt-2">
       <Top />
       <div className="py-10 max-w-[1440px] mx-auto">
-        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
+        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center ">
           Annual Reports
         </div>
-        <div className="w-full flex justify-center items-center px-4">
-          <div className="w-full max-w-5xl">
-            <ImageSlider images={images} />
-          </div>
+        <div
+          className="w-full flex justify-center items-center px-4"
+          id="reports"
+        >
+          <ReportsPage />
         </div>
       </div>
 
       <div className="py-10 max-w-[1440px] mx-auto">
-        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
+        <div
+          className="text-2xl lg:text-4xl font-semibold text-background/80 text-center"
+          id="events"
+        >
           Events
         </div>
         <div className="w-full flex justify-center items-center">
-          <div className="w-full max-w-6xl py-5 ">
+          <div className="w-full max-w-6xl ">
             <Events cards={cards} />
           </div>
         </div>
