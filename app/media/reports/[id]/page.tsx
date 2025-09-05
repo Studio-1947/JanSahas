@@ -1,8 +1,6 @@
 import { notFound } from "next/navigation";
 import { reports } from "@/lib/reports";
 
-type Props = { params: { id: string } };
-
 // Optional: prebuild static pages for all ids (good for prod, can skip in dev)
 export function generateStaticParams() {
   return reports.map((r) => ({ id: r.id }));
@@ -13,18 +11,24 @@ function normalizeId(input: string) {
   return decodeURIComponent(input).replace(/\//g, "-").toLowerCase();
 }
 
-export default function ReportDetail({ params }: Props) {
-  const id = normalizeId(params.id);
+type Props = {
+  params: Promise<{ id: string }>; // 👈 Promise form
+};
+
+export default async function ReportDetail({ params }: Props) {
+  const { id: rawId } = await params; // 👈 await params
+  const id = normalizeId(rawId);
+
   const report = reports.find((r) => r.id.toLowerCase() === id);
   if (!report) return notFound();
 
   return (
     <div className="px-4 py-6">
       <div className="flex items-center justify-center gap-2 mb-3 flex-col">
-        <h2 className="text-3xl font-semibold text-background/80 text-center ">
+        <h2 className="text-3xl font-semibold text-background/80 text-center">
           {report.title}
         </h2>
-        <div className="flex items-center gap-2 text-sm ">
+        <div className="flex items-center gap-2 text-sm">
           <a
             href={report.pdfPath}
             download
@@ -43,7 +47,7 @@ export default function ReportDetail({ params }: Props) {
         </div>
       </div>
 
-      {/* Inline PDF (this *displays the PDF itself*) */}
+      {/* Inline PDF */}
       <div className="border border-black/10 rounded-xl overflow-hidden">
         <object
           data={report.pdfPath}
