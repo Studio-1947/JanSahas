@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 const Members = [
@@ -20,7 +19,7 @@ const Members = [
   },
   {
     name: "Jyoti Choudhary",
-    img: "/aboutUs/placeholder.png",
+    img: "/members/JyotiChoudhary.png",
     designation: "Social Outreach Coordinator",
     about:
       "Jyoti Choudhary has worked in the social sector for over 12 years, focusing on the prevention of violence against women and girls. She has provided critical legal support to affected women, children, and their families, advocating for their rights and safety within both legal and social systems.",

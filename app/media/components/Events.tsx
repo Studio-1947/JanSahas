@@ -72,7 +72,7 @@ const Events = ({ cards }: eventType) => {
                       {card.title}
                     </h3>
                   </div>
-                  <div className="p-4 pt-0">
+                  {/* <div className="p-4 pt-0">
                     <button
                       aria-label="Read more about event"
                       className="inline-flex cursor-pointer items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 rounded-full bg-primary text-white transition-all duration-300 hover:brightness-105 active:scale-[0.98] md:text-sm font-medium text-xs"
@@ -85,7 +85,7 @@ const Events = ({ cards }: eventType) => {
                         className="transition-transform duration-300 group-hover:translate-x-1"
                       />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </SwiperSlide>

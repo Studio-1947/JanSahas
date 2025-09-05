@@ -13,29 +13,19 @@ const images = [
 const cards = [
   {
     id: 1,
-    title: "Name of the Event",
+    title: "USHA Silai School training",
     image: "/media/event1.webp",
   },
   {
     id: 2,
-    title: "Name of the Event",
+    title: "Organisational Development Training",
     image: "/media/event2.webp",
   },
   {
     id: 3,
-    title: "Name of the Event",
+    title: "Khushiyon ka Pitara - Wellbeing centers in the community",
     image: "/media/event3.webp",
-  },
-  {
-    id: 4,
-    title: "Name of the Event",
-    image: "/media/event2.webp",
-  },
-  {
-    id: 5,
-    title: "Name of the Event",
-    image: "/media/event3.webp",
-  },
+  }
 ];
 
 const page = () => {
