@@ -41,10 +41,10 @@ const Sections: Section[] = [
     ],
   },
   {
-    title: "Services",
+    title: "Our Work",
     items: [
       { label: "Projects", href: "/projects" },
-      { label: "Testimonials", href: "/testimonials" },
+      { label: "Events", href: "/media#events" },
     ],
   },
   {
@@ -114,10 +114,16 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
           <address className="not-italic text-background/80">
             <div className="flex flex-wrap items-start gap-4 sm:gap-6">
               <div className="flex items-center gap-2 text-xs sm:text-sm opacity-80">
-                <IoLocation size={18} aria-hidden />
-                <span>
-                  408, G-1 Ahinsha Height, Manavta Nagar, Indore 452016
-                </span>
+                <Link
+                  href="https://maps.app.goo.gl/KXxKTmBJ1qwckS8W6"
+                  target="_blank"
+                  className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded flex items-center gap-2"
+                >
+                  <IoLocation size={18} aria-hidden />
+                  <span>
+                    408, G-1 Ahinsha Height, Manavta Nagar, Indore 452016
+                  </span>
+                </Link>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm opacity-80">
                 <IoMdMail size={18} aria-hidden />
@@ -220,7 +226,7 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
               Privacy Policy
             </Link>
             <Link
-              href="/terms"
+              href="/components/terms"
               className="hover:opacity-100 opacity-80 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded"
             >
               Terms of Use

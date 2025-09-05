@@ -1,117 +1,86 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, A11y, Keyboard } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import { Autoplay, Pagination, Scrollbar } from "swiper/modules";
 import Image from "next/image";
-import { FaArrowRightLong } from "react-icons/fa6";
 
-interface eventType {
-  cards: { id: number; image: string; title: string }[];
+interface EventCard {
+  id: number | string;
+  image: string;
+  title: string;
+  subtitle?: string;
 }
 
-const Events = ({ cards }: eventType) => {
+export default function EventsSwiper({ cards }: { cards: EventCard[] }) {
   return (
-    <div className="w-full h-full overflow-hidden py-10">
+    <section className="w-full px-4 py-6 bg-transparent">
       <Swiper
-        rewind={true}
-        modules={[Pagination, Scrollbar, Autoplay]}
-        grabCursor={true}
-        spaceBetween={24}
-        centeredSlides={true}
-        roundLengths={true}
-        slidesOffsetBefore={16}
-        slidesOffsetAfter={16}
+        modules={[Pagination, Autoplay, A11y, Keyboard]}
+        slidesPerView={1}
+        spaceBetween={16}
+        loop={cards.length > 1}
+        centeredSlides
+        roundLengths
+        keyboard={{ enabled: true }}
         autoplay={{
           delay: 3500,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true, hide: true }}
-        slidesPerView={"auto"}
-        breakpoints={{
-          640: {
-            spaceBetween: 24,
-            centeredSlides: false,
-          },
-          768: {
-            spaceBetween: 28,
-            centeredSlides: false,
-          },
-          1024: {
-            spaceBetween: 32,
-            centeredSlides: false,
-          },
-        }}
-        className="mySwiper !pb-10"
+        className="!pb-8 !bg-transparent"
+        aria-label="Events carousel"
       >
-        <div className="!py-6 !gap-6 !px-4 ">
-          {cards.map((card) => (
-            <SwiperSlide
-              key={card.id}
-              className="group rounded-2xl !bg-white/90 backdrop-blur mx-auto shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 hover:border-black/10 !w-[85%] sm:!w-[46%] md:!w-[31%] lg:!w-[23%] !h-[320px] sm:!h-[360px] overflow-hidden"
-            >
-              <div className="h-full flex flex-col">
-                <div className="relative w-full h-40 sm:h-44 md:h-48 overflow-hidden">
-                  <Image
-                    src={card.image}
-                    alt={card.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 260px"
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.06]"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0 opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
-                </div>
-                <div className="flex-1 flex flex-col justify-between">
-                  <div className="p-4">
-                    <h3 className="text-base sm:text-lg text-background/90 font-semibold leading-snug line-clamp-2">
-                      {card.title}
-                    </h3>
-                  </div>
-                  <div className="p-4 pt-0">
-                    <button
-                      aria-label="Read more about event"
-                      className="inline-flex cursor-pointer items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 rounded-full bg-primary text-white transition-all duration-300 hover:brightness-105 active:scale-[0.98] md:text-sm font-medium text-xs"
-                    >
-                      <span className="transition-transform duration-300 group-hover:-translate-x-0.5">
-                        Read more
-                      </span>
-                      <FaArrowRightLong
-                        size={15}
-                        className="transition-transform duration-300 group-hover:translate-x-1"
-                      />
-                    </button>
-                  </div>
-                </div>
+        {cards.map((card) => (
+          <SwiperSlide key={card.id} className="!h-auto !bg-transparent">
+            <article className="relative isolate rounded-xl border border-black/10 overflow-hidden bg-white shadow-sm">
+              {/* Media (carry the rounding + clipping here) */}
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  fill
+                  sizes="100vw"
+                  className="object-cover will-change-transform"
+                  priority={false}
+                />
+                {/* Overlay must match the same rounding */}
+                <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-t from-black/30 via-black/10 to-transparent" />
               </div>
-            </SwiperSlide>
-          ))}
-        </div>
+
+              {/* Content */}
+              <div className="p-4">
+                <h3 className="text-base font-semibold text-gray-900 leading-snug line-clamp-2">
+                  {card.title}
+                </h3>
+                {card.subtitle && (
+                  <p className="mt-1 text-xs text-gray-600 line-clamp-1">{card.subtitle}</p>
+                )}
+              </div>
+
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-black/20 via-transparent to-black/20" />
+            </article>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
-      {/* Custom Pagination Styling */}
+      {/* Pagination styling */}
       <style jsx global>{`
         .swiper-pagination {
-          position: relative !important; /* move it into normal flow */
-          bottom: 0 !important; /* remove absolute positioning */
-          margin-top: 1rem; /* spacing from the slides */
+          position: relative !important;
+          bottom: 0 !important;
+          margin-top: 0.75rem;
           text-align: center;
         }
         .swiper-pagination-bullet {
           width: 10px;
           height: 10px;
           margin: 0 6px !important;
-          background-color: var(
-            --primary,
-            #0ea5e9
-          ) !important; /* fallback color */
+          background-color: var(--primary, #0ea5e9) !important;
           opacity: 0.35;
-          transition: transform 200ms ease, opacity 200ms ease,
-            background-color 200ms ease;
+          transition: transform 200ms ease, opacity 200ms ease, background-color 200ms ease;
           transform: scale(0.9);
           border: 2px solid rgba(255, 255, 255, 0.7);
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
@@ -122,8 +91,6 @@ const Events = ({ cards }: eventType) => {
           background-color: var(--primary, #0284c7) !important;
         }
       `}</style>
-    </div>
+    </section>
   );
-};
-
-export default Events;
+}

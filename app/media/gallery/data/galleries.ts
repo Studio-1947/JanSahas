@@ -2,7 +2,7 @@
 export const galleries = [
   {
     id: "1",
-    title: "Gallery 1",
+    title: "USHA Silai School",
     coverImage: "/media/gallery/1/cover.webp",
     images: [
       "/media/gallery/1/IMG_20240220_122927.webp",
@@ -54,7 +54,7 @@ export const galleries = [
   },
   {
     id: "2",
-    title: "Gallery 2",
+    title: "Migrants Resilience Collaborative (MRC)",
     coverImage: "/media/gallery/2/cover.webp",
     images: [
       "/media/gallery/2/Team Capcity Building Meeting 2.webp",
@@ -79,7 +79,7 @@ export const galleries = [
   },
   {
     id: "3",
-    title: "Gallery 3",
+    title: "Sahaare ke Chotte Ishaare - Community Mental Health Programme",
     coverImage: "/media/gallery/cover.webp",
     images: [
       "/media/gallery/3/Raised hands-school session.webp",

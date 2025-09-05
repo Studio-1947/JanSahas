@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 // import { Button, input, Textarea, div } from "@material-tailwind/react";
 
@@ -48,11 +49,18 @@ export function ContactSection14() {
                 <h2 className="title-font font-semibold text-gray-900 text-xs">
                   ADDRESS
                 </h2>
-                <p className="mt-1 text-background/80">
-                  408, G-1 Ahinsha Height,
-                  <br />
-                  Manavta Nagar, Indore 452016, Madhya Pradesh, India
-                </p>
+
+                <Link
+                  href="https://maps.app.goo.gl/KXxKTmBJ1qwckS8W6"
+                  target="_blank"
+                  className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded flex items-center gap-2"
+                >
+                  <p className="mt-1 text-background/80">
+                    408, G-1 Ahinsha Height,
+                    <br />
+                    Manavta Nagar, Indore 452016, Madhya Pradesh, India
+                  </p>
+                </Link>
               </div>
               <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 className="title-font font-semibold text-gray-900 text-xs">
