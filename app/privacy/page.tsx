@@ -3,8 +3,6 @@
 import React from "react";
 
 export default function PrivacyPolicy() {
-  const pdfSrc = "/privacy-policy.pdf"; // place the PDF in /public if you want
-
   return (
     <div className="px-4 py-6 text-sm leading-6 text-gray-900 max-w-3xl mx-auto ">
       <h1 className="text-lg font-semibold mb-4 text-left">

@@ -1,7 +1,6 @@
 import React from "react";
 import OurWork from "./components/OurWork";
 import Community from "./components/Community";
-import SuccessStory from "./components/SuccessStory";
 import Over from "./components/Over";
 import OurProgram from "./components/OurProgram";
 import Collab from "./components/Collab";
@@ -16,7 +15,6 @@ const page = () => {
       <OurWork />
       <div className=" px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto">
         <Community />
-        {/* <SuccessStory /> */}
         <Over />
       </div>
       <div className="">

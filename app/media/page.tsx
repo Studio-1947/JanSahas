@@ -1,17 +1,8 @@
 import React from "react";
 import Top from "./components/Top";
-import ImageSlider from "../components/ICarousel";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
-import ReportCard from "../components/ReportCard";
-import { reports } from "@/lib/reports";
 import ReportsPage from "./reports/page";
-
-const images = [
-  "/media/slide1.webp",
-  "/media/slide2.webp",
-  "/media/slide3.webp",
-];
 
 const cards = [
   {

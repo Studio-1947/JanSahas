@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FiCheckCircle, FiLock } from "react-icons/fi";
+import { FiLock } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const SUPPORTS = [

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FiCheckCircle, FiHelpCircle } from "react-icons/fi";
+import { FiHelpCircle } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Sections = [
