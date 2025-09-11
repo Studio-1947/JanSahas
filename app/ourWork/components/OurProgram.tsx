@@ -4,6 +4,7 @@ const SERVICES = [
   "Counselling services",
   "Awareness camps",
   "Community support group facilitation",
+  "Entitlements",
 ];
 
 const IMPACT_TEXT =
@@ -62,11 +63,8 @@ const OurProgram = () => {
                 {SERVICES.map((service, idx) => (
                   <div
                     key={idx}
-                    className={`flex items-start gap-3 rounded-xl border border-[#E9E9E9] bg-white/95 p-4 shadow-sm transition-all duration-300 hover:shadow-md col-span-1 ${
-                      service === "Community support group facilitation"
-                        ? "lg:col-span-2"
-                        : ""
-                    }`}
+                    className="flex items-start gap-3 rounded-xl border border-[#E9E9E9] bg-white/95 p-4 shadow-sm transition-all duration-300 hover:shadow-md col-span-1 
+                    "
                   >
                     <span className="mt-1 block h-2.5 w-2.5 rounded-full bg-primary/70 ring-4 ring-primary/10" />
                     <div className="text-sm md:text-base font-medium text-background/80">

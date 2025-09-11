@@ -10,7 +10,7 @@ const OurStory = () => {
         <div className="text-2xl lg:text-4xl font-semibold text-center lg:text-left">
           Our Story
         </div>
-        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-center">
+        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg lg:text-left text-center">
           Jan Sahas Social Empowerment Society (JSSES) was established in 2006
           with a deep commitment to empowering the most disadvantageds
           communities in Madhya Pradesh. Our journey began with the recognition

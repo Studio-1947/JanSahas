@@ -58,29 +58,6 @@ const Sections: Section[] = [
       { label: "Volunteer", href: "/getInvolved#vacancies" },
     ],
   },
-  {
-    title: "Social",
-    items: [
-      {
-        label: "Facebook",
-        href: "https://www.facebook.com/yourpage",
-        external: true,
-        ariaLabel: "Follow us on Facebook",
-      },
-      {
-        label: "X",
-        href: "https://x.com/yourhandle",
-        external: true,
-        ariaLabel: "Follow us on X (Twitter)",
-      },
-      {
-        label: "Instagram",
-        href: "https://www.instagram.com/yourhandle",
-        external: true,
-        ariaLabel: "Follow us on Instagram",
-      },
-    ],
-  },
 ];
 
 interface FooterProps {
@@ -106,8 +83,16 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
               alt="Jan Sahas logo"
               priority
             />
-            <div className="text-lg sm:text-2xl lg:text-4xl font-semibold mt-1 text-background/80">
-              Jan Sahas
+            <div className="text-background/80">
+              {/* Brand name: larger size, tighter spacing */}
+              <span className="block text-base sm:text-lg md:text-xl font-semibold leading-tight tracking-[-0.01em]">
+                Jan Sahas
+              </span>
+
+              {/* Tagline: chhota size, halka spacing, better wrap on small screens */}
+              <span className="block text-[11px] sm:text-sm md:text-base font-medium leading-snug opacity-80 -mt-0.5 sm:mt-0 whitespace-normal">
+                Social Empowerment Society
+              </span>
             </div>
           </div>
 
@@ -142,18 +127,20 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
         <hr className="my-6 sm:my-8 border-background/15" />
 
         {/* Link grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8">
+        <div
+          className="grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-x-8 gap-y-6 sm:gap-y-8 lg:gap-x-12 items-start lg:pl-5 max-w-[1100px] mx-auto"
+        >
           {/* Nav mapped from navbar */}
-          <nav aria-label="Site" className="col-span-2 sm:col-span-1">
-            <h3 className="text-background text-xs md:text-sm font-medium tracking-wide opacity-70">
+          <nav aria-label="Site" className="col-span-2 sm:col-span-1 min-w-[180px]">
+            <h3 className="text-background text-[11px] md:text-xs font-semibold tracking-wider uppercase opacity-70">
               Navigation
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-3 md:mt-4 space-y-2.5 md:space-y-3">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="text-xs md:text-sm text-background/80 opacity-80 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded"
+                    className="text-xs md:text-sm leading-relaxed text-background/80 opacity-80 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded"
                   >
                     {item.label}
                   </Link>
@@ -163,15 +150,16 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
           </nav>
 
           {/* Sections (links only when href is provided) */}
+          {/* <div className="flex justify-between items-"> */}
           {Sections.map((section) => (
-            <div key={section.title}>
-              <h3 className="text-background text-xs md:text-sm font-medium tracking-wide opacity-70">
+            <div key={section.title} className="min-w-[160px]">
+              <h3 className="text-background text-[11px] md:text-xs font-semibold tracking-wider uppercase opacity-70">
                 {section.title}
               </h3>
-              <ul className="mt-4 space-y-3">
+              <ul className="mt-3 md:mt-4 space-y-2.5 md:space-y-3">
                 {section.items.map((item) => {
                   const commonClasses =
-                    "text-xs md:text-sm text-background/80 opacity-80 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded";
+                    "text-xs md:text-sm leading-relaxed text-background/80 opacity-80 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded";
 
                   // External link
                   if (item.href && item.external) {
@@ -213,6 +201,7 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
               </ul>
             </div>
           ))}
+          {/* </div> */}
         </div>
 
         {/* Bottom bar */}
@@ -224,12 +213,6 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
               className="hover:opacity-100 opacity-80 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded"
             >
               Privacy Policy
-            </Link>
-            <Link
-              href="/components/terms"
-              className="hover:opacity-100 opacity-80 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded"
-            >
-              Terms of Use
             </Link>
           </div>
         </div>
