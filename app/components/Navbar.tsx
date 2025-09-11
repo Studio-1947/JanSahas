@@ -11,6 +11,7 @@ const navLinks = [
   { title: "Get Involved", link: "/getInvolved" },
   { title: "Resources", link: "/media" },
   { title: "Contact Us", link: "/contactUs" },
+  { title: "Donate", link: "/getInvolved#donate" },
 ];
 
 function NavBar() {
@@ -27,23 +28,31 @@ function NavBar() {
         }`}
       >
         {/* Logo */}
-        <div className="cursor-pointer flex justify-center items-center gap-2 sm:gap-3">
-          <Link href="/">
+        <div className="cursor-pointer flex items-center gap-2 sm:gap-3">
+          <Link href="/" aria-label="Home — Jan Sahas" className="shrink-0">
             <Image
               src="/logo/fevicon_js 2.svg"
               width={60}
               height={35}
-              alt="nav_logo"
+              alt="Jan Sahas logo"
               className="transition-all duration-300 hover:scale-105 object-contain"
+              priority
             />
           </Link>
-          <span
-            className={`${isMenuOpen ? "text-white" : "text-background/80"} text-lg sm:text-xl font-semibold`}
-          >
-            Jan Sahas
-          </span>
-        </div>
 
+          {/* Text block */}
+          <div className={isMenuOpen ? "text-white" : "text-background/80"}>
+            {/* Brand name: larger size, tighter spacing */}
+            <span className="block text-base sm:text-lg md:text-xl font-semibold leading-tight tracking-[-0.01em]">
+              Jan Sahas
+            </span>
+
+            {/* Tagline: chhota size, halka spacing, better wrap on small screens */}
+            <span className="block text-[11px] sm:text-sm md:text-base font-medium leading-snug opacity-80 -mt-0.5 sm:mt-0 whitespace-normal">
+              Social Empowerment Society
+            </span>
+          </div>
+        </div>
         {/* Desktop Nav */}
         <nav className="hidden lg:flex">
           <ul className="flex">

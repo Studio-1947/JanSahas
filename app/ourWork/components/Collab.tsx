@@ -33,9 +33,6 @@ const Collab = () => {
           demonstrating their trust in our expertise and services.
         </p>
       </div>
-      <button className="inline-flex items-center gap-2 cursor-pointer px-8 py-[0.9375rem] rounded-[2rem] bg-primary text-white  transition-all duration-300 hover:scale-103 md:text-sm font-medium text-xs z-10">
-        Learn more <FaArrowRightLong size={15} />
-      </button>
     </div>
   );
 };

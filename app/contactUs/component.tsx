@@ -1,8 +1,50 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 // import { Button, input, Textarea, div } from "@material-tailwind/react";
 
 export function ContactSection14() {
+  const [submitting, setSubmitting] = useState(false);
+  const [status, setStatus] = useState<null | { ok: boolean; message: string }>(null);
+
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus(null);
+    const formData = new FormData(e.currentTarget);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    if (!name || !email || !message) {
+      setStatus({ ok: false, message: "Please fill all fields." });
+      return;
+    }
+
+    try {
+      setSubmitting(true);
+      const res = await fetch(`/api/submissions`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data?.error || "Submission failed");
+      }
+      setStatus({ ok: true, message: "Thank you! We’ll be in touch." });
+      e.currentTarget.reset();
+    } catch (err: unknown) {
+      const message =
+        err instanceof Error
+          ? err.message
+          : typeof err === "string" && err.length
+          ? err
+          : "Something went wrong.";
+      setStatus({ ok: false, message });
+    } finally {
+      setSubmitting(false);
+    }
+  }
   return (
     <>
       <section
@@ -85,42 +127,55 @@ export function ContactSection14() {
             <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
               GET IN TOUCH
             </div>
-
-            <div className=" mb-4">
-              <label className="leading-7 text-sm text-background/80">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className=" mb-4">
-              <label className="leading-7 text-sm text-background/80">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className=" mb-4">
-              <label className="leading-7 text-sm text-background/80">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              ></textarea>
-            </div>
-            <button className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary  text-lg rounded-[2rem] cursor-pointer">
-              <a href="mailto:jses.indore@gmail.com">Submit</a>
-            </button>
+            <form onSubmit={onSubmit} className="mt-4">
+              <div className=" mb-4">
+                <label className="leading-7 text-sm text-background/80">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div className=" mb-4">
+                <label className="leading-7 text-sm text-background/80">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div className=" mb-4">
+                <label className="leading-7 text-sm text-background/80">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+              {status && (
+                <p className={`${status.ok ? "text-green-600" : "text-red-600"} text-sm mb-3`}>
+                  {status.message}
+                </p>
+              )}
+              <button
+                type="submit"
+                disabled={submitting}
+                className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary text-lg rounded-[2rem] cursor-pointer disabled:opacity-60"
+              >
+                {submitting ? "Submitting..." : "Submit"}
+              </button>
+            </form>
           </div>
         </div>
       </section>

@@ -12,7 +12,7 @@ const SUPPORTS = [
 
 const Donate = () => {
   return (
-    <div className="py-10 px-3">
+    <div className="py-10 px-3 " id="donate">
       <div className="py-5 max-w-6xl mx-auto">
         <div className="text-background/80 text-2xl lg:text-4xl font-semibold text-center">
           Donate: Invest in Empowerment
@@ -26,7 +26,7 @@ const Donate = () => {
         </p>
       </div>
 
-      <div className="px-3 sm:px-10 max-w-6xl mx-auto">
+      <div className="px-3 sm:px-10 max-w-6xl mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-6">
           {/* Support list */}
           <div className="relative rounded-2xl p-6 bg-white/90 backdrop-blur shadow-md text-background/80">
@@ -36,7 +36,7 @@ const Donate = () => {
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
               {SUPPORTS.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className='text-background/80'>*</span>
+                  <span className="text-background/80">*</span>
                   <span className="text-sm md:text-base opacity-80 leading-relaxed">
                     {item}
                   </span>
@@ -46,7 +46,7 @@ const Donate = () => {
           </div>
 
           {/* How to donate */}
-          <div id="donate" className="relative rounded-2xl p-6 bg-white/90 backdrop-blur shadow-md text-background/80 flex items-center">
+          <div className="relative rounded-2xl p-6 bg-white/90 backdrop-blur shadow-md text-background/80 flex items-center">
             <div className="flex flex-col gap-4">
               <div className="text-xl font-bold">How to Donate</div>
               <p className="text-sm md:text-base opacity-70 max-w-md">
@@ -55,7 +55,7 @@ const Donate = () => {
               </p>
               <div className="flex items-center gap-3 pt-1">
                 <Link
-                  href="/contactUs"
+                  href="https://rzp.io/l/jansahas"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white transition-all duration-300 hover:scale-103 md:text-sm text-xs font-medium"
                 >
                   Donate Now <FaArrowRightLong size={14} />
