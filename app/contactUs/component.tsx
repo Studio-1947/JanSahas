@@ -38,7 +38,13 @@ export function ContactSection14() {
 
       try {
         setSubmitting(true);
-        const res = await fetch(`${process.env.API_BASE_URL}/api/submissions`, {
+        const baseFromEnv = process.env.NEXT_PUBLIC_API_BASE_URL;
+        const baseUrl = (
+          typeof baseFromEnv === "string" && baseFromEnv.length
+            ? baseFromEnv
+            : window.location.origin
+        ).replace(/\/$/, "");
+        const res = await fetch(`${baseUrl}/api/submissions`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name, email, message }),
@@ -46,7 +52,6 @@ export function ContactSection14() {
         if (!res.ok) {
           const data = await res.json().catch(() => ({}));
           throw new Error(data?.error || "Submission failed");
-          console.log(data);
         }
 
         setStatus({ ok: true, message: "Thank you! We’ll be in touch." });
