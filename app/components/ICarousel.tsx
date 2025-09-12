@@ -25,11 +25,11 @@ export default function ImageSlider({ images }: ImageSliderProps) {
   useEffect(() => {
     if (!isHovered) {
       const interval = setInterval(() => {
-        nextSlide();
+        setCurrentIndex((prev) => (prev + 1) % images.length);
       }, 6000);
       return () => clearInterval(interval);
     }
-  }, [isHovered]);
+  }, [isHovered, images.length]);
 
   return (
     <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl mx-auto mt-4 px-3">
