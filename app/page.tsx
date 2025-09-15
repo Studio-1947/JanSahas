@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import ICarousel from "./components/ICarousel";
 import KeyInterventions from "./components/KeyInterventions";
+import TestimonialsSection from "./components/Testimonials";
 import WhatWeDo from "./components/WhatWeDo";
 import WhoWeAre from "./components/WhoWeAre";
 
@@ -24,6 +25,9 @@ export default function Home() {
         </div>
         <div>
           <KeyInterventions />
+        </div>
+        <div>
+           <TestimonialsSection />
         </div>
       </div>
     </div>
