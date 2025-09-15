@@ -3,6 +3,9 @@ import Top from "./components/Top";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import ReportsPage from "./reports/page";
+import MentalHealthCard from "./mentalHealth/page";
+import MentalHealthListPage from "./mentalHealth/page";
+// import MentalHealthCard from "./components/MentalHealthCard";
 
 const cards = [
   {
@@ -35,6 +38,15 @@ const page = () => {
           id="reports"
         >
           <ReportsPage />
+        </div>
+      </div>
+
+      <div className="py-10 max-w-[1440px] mx-auto px-4">
+        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
+          Mental Health Resources{" "}
+        </div>
+        <div className="mt-6">
+          <MentalHealthListPage />
         </div>
       </div>
 

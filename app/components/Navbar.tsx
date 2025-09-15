@@ -101,7 +101,7 @@ function NavBar() {
                   onClick={() => setIsMenuOpen(false)}
                   className="block text-sm font-medium py-2 transition-transform duration-200 hover:scale-110 hover:text-yellow-300"
                 >
-                  <div className="text-xl sm:text-2xl lg:text-4xl font-semibold mt-2">
+                  <div className="text-xl sm:text-2xl lg:text-4xl font-semibold mt-2 text-white">
                     {navLink.title}
                   </div>
                 </Link>
