@@ -14,14 +14,14 @@ type Props = {
 
 export default function MentalHealthCard({
   className = "",
-  cover = "/media/mental-health/emotional-wheel.png",
+  cover = "/mental_health/MHperspectivesSpectrum.jpg",
   title = "Mental Health Assets",
   subtitle = "Tap to view gallery followed by the PDF manual",
   yearLabel = "2024–25",
 }: Props) {
   return (
     <Link
-      href="/media/mental-health"
+      href="/media/mentalHealth"
       aria-label={`${title} — open gallery & PDF`}
       className={[
         "relative block w-full overflow-hidden rounded-2xl group",
