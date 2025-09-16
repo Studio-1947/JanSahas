@@ -28,7 +28,7 @@ const page = () => {
     <div className="lg:pt-2">
       <Top />
       <div className="py-10 max-w-[1440px] mx-auto">
-        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center ">
+        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center " id="AnnualReports">
           Annual Reports
         </div>
         <div
