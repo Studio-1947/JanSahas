@@ -3,9 +3,7 @@ import Top from "./components/Top";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import ReportsPage from "./reports/page";
-import MentalHealthCard from "./mentalHealth/page";
-import MentalHealthListPage from "./mentalHealth/page";
-// import MentalHealthCard from "./components/MentalHealthCard";
+import MediaCard from "./components/MediaCard";
 
 const cards = [
   {
@@ -46,7 +44,14 @@ const page = () => {
           Mental Health Resources{" "}
         </div>
         <div className="mt-6">
-          <MentalHealthListPage />
+          <MediaCard
+            href="/media/mentalHealth"
+            title="Mental Health"
+            coverSrc="/mental_health/MHperspectivesSpectrum.jpg"
+            coverAlt="Mental health program cover"
+            tag="3 images & 1 PDF"
+            ctaLabel="View gallery & manual"
+          />
         </div>
       </div>
 
