@@ -243,11 +243,11 @@ function NavBar() {
   }, [clearHighlights]);
 
   return (
-    <div className="mx-auto max-w-[1440px]">
+    <div className="mx-auto w-full max-w-[1440px]">
       <header
-        className={` w-full z-50 flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8 ${
+        className={`z-50 box-border flex w-full max-w-full items-center justify-between px-4 py-3 sm:px-6 lg:px-8 ${
           isMenuOpen
-            ? "fixed left-0 top-0 bg-background text-white"
+            ? "fixed inset-x-0 top-0 bg-background text-white"
             : "bg-white"
         }`}
       >
@@ -355,7 +355,7 @@ function NavBar() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed left-0 top-[74px] h-[calc(100vh-74px)] w-full overflow-y-auto bg-background/80 px-5 pb-4 backdrop-blur-md transition-transform duration-300 ease-in-out lg:hidden z-50">
+        <div className="fixed inset-x-0 top-[74px] z-50 box-border h-[calc(100vh-74px)] max-w-full overflow-y-auto bg-background/80 px-5 pb-4 backdrop-blur-md transition-transform duration-300 ease-in-out lg:hidden">
           <ul className="flex flex-col items-center justify-center gap-5 py-5">
             {navLinks.map((navLink, index) => (
               <li key={navLink.title} className="w-full text-center">
@@ -380,22 +380,20 @@ function NavBar() {
 
           <form
             onSubmit={handleSearchSubmit}
-            data-search-ignore="true"
-            className="mx-auto mt-6 flex w-full max-w-sm items-center justify-center gap-3 rounded-full bg-white/10 px-5 py-3 text-white"
+            data-no-search /* keep consistent with your filter */
+            className="mx-auto mt-6 flex w-full max-w-sm sm:max-w-md items-center gap-3 rounded-full bg-white/10 px-4 py-3 text-white"
           >
-            <FiSearch className="h-5 w-5" aria-hidden />
+            <FiSearch className="h-5 w-5 shrink-0" aria-hidden />
             <input
               type="text"
               value={searchQuery}
-              onChange={(event) => {
-                setSearchQuery(event.target.value);
-              }}
+              onChange={(event) => setSearchQuery(event.target.value)}
               placeholder="Search this page"
-              className="flex-1 bg-transparent text-base placeholder:text-white/70 focus:outline-none"
+              className="min-w-0 flex-1 bg-transparent text-base placeholder:text-white/70 focus:outline-none"
             />
             <button
               type="submit"
-              className="rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur hover:bg-white/30"
+              className="shrink-0 rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur hover:bg-white/30"
             >
               Go
             </button>
