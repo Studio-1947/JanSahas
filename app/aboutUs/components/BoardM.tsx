@@ -7,51 +7,63 @@ const Members = [
     name: "Aasish Choubey",
     img: "/members/AasishChoubey.webp",
     designation: "Social Outreach Coordinator",
-    about: `Aashish is a seasoned legal professional with over 20 years of experience practicing at the High Court of Madhya Pradesh, Indore Bench. Since 2001, he has been committed to advancing the rights of Dalits, backward classes, and other marginalized communities, often representing them pro bono to uphold their dignity and constitutional rights.
-    Driven by a strong sense of social justice, his legal work bridges expertise with empathy, making him a vital advocate for inclusive development and human rights in India.`,
+    about: `
+    Aashish is a seasoned legal professional with over 20 years of experience practicing at the High Court of Madhya Pradesh, Indore Bench. Since 2001, he has been committed to advancing the rights of Dalits, backward classes, and other marginalized communities, often representing them pro bono to uphold their dignity and constitutional rights.
+Driven by a strong sense of social justice, his legal work bridges expertise with empathy, making him a vital advocate for inclusive development and human rights in India.
+    `,
   },
   {
     name: "Archana Gosar",
     img: "/members/ArchanaGosar.webp",
     designation: "Social Outreach Coordinator",
-    about:
-      "Archana Gosar is an advocate with a decade of legal experience, having practiced in both the High Court and District Court in Indore. Deeply committed to women’s rights, she has spent the past 10 years working to support and empower women through legal advocacy and community engagement.",
+    about: `
+      Archana Gosar is an advocate with a decade of legal experience, having practiced in both the High Court and District Court in Indore. Deeply committed to women’s rights, she has spent the past 10 years working to support and empower women through legal advocacy and community engagement.
+
+      `,
   },
   {
     name: "Jyoti Choudhary",
     img: "/members/JyotiChoudhary.png",
     designation: "Social Outreach Coordinator",
-    about:
-      "Jyoti Choudhary has worked in the social sector for over 12 years, focusing on the prevention of violence against women and girls. She has provided critical legal support to affected women, children, and their families, advocating for their rights and safety within both legal and social systems.",
+    about: `
+      Jyoti Choudhary has worked in the social sector for over 12 years, focusing on the prevention of violence against women and girls. She has provided critical legal support to affected women, children, and their families, advocating for their rights and safety within both legal and social systems.
+      `,
   },
   {
     name: "Kranti Khode",
-    img: "/members/KrantiKhode.webp",
+    img: "/members/KrantiP.svg",
     designation: "Social Outreach Coordinator",
-    about: `Kranti began her journey with Jan Sahas as a volunteer 22 years ago and now serves as Thematic Lead. With extensive experience in legal advocacy and project management, she has led impactful initiatives across the country. In 2002, she took part in a national campaign to end manual scavenging across 100 districts and later led the Dignity March—a survivor-led movement spanning 200 districts.
-    Under her leadership, programs have delivered socio-medical and legal support to nearly 10,000 survivors of violence. She holds a Master’s degree in Law and an MSW from Tata Institute of Social Sciences (TISS), Mumbai, and is a certified trainer in POSH, POCSO, and Safeguarding.`,
+    about: `
+    Kranti Khode’s vision is to build a society where dignity, justice, and equality are not privileges, but guaranteed fundamental rights for every individual, especially the most marginalized.
+She comes from the Valmiki (manual scavenging) community and began her journey 22 years ago as a field worker dedicated to eradicating the inhuman practice of manual scavenging with the grassroots organization Jan Sahas and through the Rashtriya Garima Abhiyaan. Today, she serves as the Secretary of Jan Sahas Social Empowerment Society.
+She holds academic qualifications in B.A., LL.B., LL.M., and an M.S.W. Over the years, she has gained extensive experience in addressing critical issues such as the eradication of manual scavenging, prevention of violence against women and children, migration, mental health, women’s empowerment, and livelihood promotion. Her work has consistently been rooted in close engagement with marginalized communities.
+In addition, she has conducted training on the POSH Act and POCSO Act, and on strengthening the capacities of community volunteers as paralegals. She was an active contributor to the Rashtriya Garima Abhiyaan (2012), a nationwide campaign to end manual scavenging, and participated in the Dignity March (2018), a campaign led by survivors of sexual violence to end violence against women and children.
+`,
   },
   {
     name: "Pramila Rathore",
     img: "/members/PramilaRathore.webp",
     designation: "Social Outreach Coordinator",
-    about:
-      "With 17 years of experience in social work, Pramila Rathore holds a Master’s in Social Work and a PGDCA. Her work spans education and women’s rights, including eight years of teaching in primary, middle, and high schools. She has been deeply involved in efforts to prevent violence against women and promote reproductive health, focusing on community-level impact.",
+    about: `
+      With 17 years of experience in social work, Pramila Rathore holds a Master’s in Social Work and a PGDCA. Her work spans education and women’s rights, including eight years of teaching in primary, middle, and high schools. She has been deeply involved in efforts to prevent violence against women and promote reproductive health, focusing on community-level impact.
+
+      `,
   },
   {
     name: "Rajendra Bandhu",
     img: "/members/RajendraBandhu.webp",
     designation: "Social Outreach Coordinator",
     about: `Hailing from the remote village of Khatgaon in Madhya Pradesh and rooted in a marginalized community, Rajendra Bandhu (M.A., M.Phil., LL.B., LL.M.) has spent over 35 years driving grassroots social change. As a lifelong social worker and legal advocate, he has worked extensively with NGOs to promote gender equality and ensure that government schemes benefit underserved communities. A lifetime member of the Indore High Court Bar Association, he specializes in family law and women’s legal rights, and has authored several books aimed at making legal knowledge accessible to all.
-
-Rajendra is nationally recognized for challenging gender norms and opening doors for women in non-traditional professions such as mechanics, electricians, and drivers. He founded the Samaan Society to institutionalize his vision for social inclusion and equality, and established India’s first women-run mechanic garage in Indore—a powerful symbol of empowerment and change.`,
+Rajendra is nationally recognized for challenging gender norms and opening doors for women in non-traditional professions such as mechanics, electricians, and drivers. He founded the Samaan Society to institutionalize his vision for social inclusion and equality, and established India’s first women-run mechanic garage in Indore—a powerful symbol of empowerment and change.
+`,
   },
   {
     name: "Sudha Jain",
     img: "/members/image.webp",
     designation: "Social Outreach Coordinator",
-    about:
-      "An Assistant Professor at Indore School of Social Work for 22 years, Sudha Jain has a rich background as a researcher, labour welfare officer, and child rights advocate. As a member of the Child Welfare Committee, she has helped rehabilitate over 600 vulnerable children. She also serves as a POSH Consultant for multiple organizations, offering training and guidance on workplace sexual harassment laws. With 23 published papers and 15 national seminar presentations, her work bridges academia and frontline social impact. ",
+    about: `
+     An Assistant Professor at Indore School of Social Work for 22 years, Sudha Jain has a rich background as a researcher, labour welfare officer, and child rights advocate. As a member of the Child Welfare Committee, she has helped rehabilitate over 600 vulnerable children. She also serves as a POSH Consultant for multiple organizations, offering training and guidance on workplace sexual harassment laws. With 23 published papers and 15 national seminar presentations, her work bridges academia and frontline social impact.
+     `,
   },
 ];
 const BoardM = () => {

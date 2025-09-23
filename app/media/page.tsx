@@ -21,6 +21,21 @@ const cards = [
     title: "Khushiyon ka Pitara - Wellbeing centers in the community",
     image: "/media/event3.webp",
   },
+  {
+    id: 3,
+    title: "Stakeholder's Workshop",
+    image: "/media/StakeholderWorkshop.jpeg",
+  },
+  {
+    id: 3,
+    title: "Stakeholder's Workshop",
+    image: "/media/StakeholderWorkshop1.jpeg",
+  },
+  {
+    id: 3,
+    title: "Stakeholder's Workshop",
+    image: "/media/StakeholderWorkshop2.jpeg",
+  },
 ];
 
 const page = () => {
@@ -28,7 +43,10 @@ const page = () => {
     <div className="lg:pt-2">
       <Top />
       <div className="py-10 max-w-[1440px] mx-auto">
-        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center " id="AnnualReports">
+        <div
+          className="text-2xl lg:text-4xl font-semibold text-background/80 text-center "
+          id="AnnualReports"
+        >
           Annual Reports
         </div>
         <div

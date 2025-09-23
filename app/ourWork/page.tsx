@@ -8,6 +8,7 @@ import Extra from "../components/Extra";
 import Enhance from "./components/Enhance";
 import Bonds from "./components/Bonds";
 import StakeHolder from "./components/StakeHolder";
+import CaseStudies from "./components/CaseStudies";
 
 const page = () => {
   return (
@@ -45,6 +46,9 @@ const page = () => {
         <Enhance />
         <Bonds />
         <StakeHolder />
+        <div className="pt-15">
+          <CaseStudies />
+        </div>
       </div>
     </div>
   );

@@ -5,14 +5,14 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <section className="relative h-[500px] md:h-[500px] flex items-center justify-center ">
+    <section className="relative h-[500px] md:h-[500px] flex items-center justify-center  lg:h-[600px] overflow-hidden">
       {/* Background Image */}
       <Image
         src="/hero/hero_image.webp"
         alt="Jan Sahas - Social Empowerment"
         fill
         priority
-        className="object-cover object-top"
+        className="object-cover object-center"
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-background/80" />

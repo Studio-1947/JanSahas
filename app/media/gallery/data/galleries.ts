@@ -50,6 +50,7 @@ export const galleries = [
       "/media/gallery/1/USS8.webp",
       "/media/gallery/1/USS9.webp",
       "/media/gallery/1/USS10.webp",
+      "/media/gallery/1/Use in Usha Project.webp",
     ],
   },
   {
@@ -75,6 +76,7 @@ export const galleries = [
       "/media/gallery/2/Safe Migration.webp",
       "/media/gallery/2/Team activity 2.webp",
       "/media/gallery/2/Team Activity.webp",
+      "/media/gallery/2/UseinMRCproject.webp",
     ],
   },
   {
@@ -104,6 +106,8 @@ export const galleries = [
       "/media/gallery/3/kids art work.webp",
       "/media/gallery/3/MH Awareness Campaign - Indore.webp",
       "/media/gallery/3/MH Awareness Campaign - Sanwer.webp",
+      
+      "/media/gallery/3/Use in Mental Health project.webp",
     ],
   },
 ];

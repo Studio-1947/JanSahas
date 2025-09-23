@@ -6,7 +6,7 @@ const OurWork = () => {
       <div
         className="
           relative
-          bg-[url('/ourWork/PAT3.webp')]
+          bg-[url('/media/gallery/2/UseinMRCproject.webp')]
           bg-no-repeat
           bg-cover
           bg-center
