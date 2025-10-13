@@ -47,14 +47,22 @@ const Usha = () => {
           <div className="hidden md:flex absolute inset-x-3 bottom-3 z-10 flex-row items-stretch gap-3">
             <div className="flex-1 rounded-xl border border-black/10 ring-1 ring-black/5 bg-white/90 backdrop-blur-sm p-5">
               <div>
-                <div className="text-lg font-semibold text-background/80">{trainingModule.title}</div>
-                <p className="mt-1 text-sm text-background/80 leading-relaxed">{trainingModule.text}</p>
+                <div className="text-lg font-semibold text-background/80">
+                  {trainingModule.title}
+                </div>
+                <p className="mt-1 text-sm text-background/80 leading-relaxed">
+                  {trainingModule.text}
+                </p>
               </div>
             </div>
             <div className="w-[42%] rounded-xl border border-black/10 ring-1 ring-black/5 bg-white/90 backdrop-blur-sm p-5">
               <div>
-                <div className="text-lg font-semibold text-background/80">{achievement.title}</div>
-                <p className="mt-1 text-sm text-background/80 leading-relaxed">{achievement.text}</p>
+                <div className="text-lg font-semibold text-background/80">
+                  {achievement.title}
+                </div>
+                <p className="mt-1 text-sm text-background/80 leading-relaxed">
+                  {achievement.text}
+                </p>
               </div>
             </div>
           </div>
@@ -63,14 +71,22 @@ const Usha = () => {
         <div className="flex flex-col gap-3 mt-3 md:hidden">
           <div className="rounded-xl border border-black/10 ring-1 ring-black/5 bg-white/90 backdrop-blur-sm p-4">
             <div>
-              <div className="text-base font-semibold text-background/80">{trainingModule.title}</div>
-              <p className="mt-1 text-xs text-background/80 leading-relaxed">{trainingModule.text}</p>
+              <div className="text-base font-semibold text-background/80">
+                {trainingModule.title}
+              </div>
+              <p className="mt-1 text-xs text-background/80 leading-relaxed">
+                {trainingModule.text}
+              </p>
             </div>
           </div>
           <div className="rounded-xl border border-black/10 ring-1 ring-black/5 bg-white/90 backdrop-blur-sm p-4">
             <div>
-              <div className="text-base font-semibold text-background/80">{achievement.title}</div>
-              <p className="mt-1 text-xs text-background/80 leading-relaxed">{achievement.text}</p>
+              <div className="text-base font-semibold text-background/80">
+                {achievement.title}
+              </div>
+              <p className="mt-1 text-xs text-background/80 leading-relaxed">
+                {achievement.text}
+              </p>
             </div>
           </div>
         </div>
