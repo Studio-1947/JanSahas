@@ -9,6 +9,8 @@ import Enhance from "./components/Enhance";
 import Bonds from "./components/Bonds";
 import StakeHolder from "./components/StakeHolder";
 import CaseStudies from "./components/CaseStudies";
+import MRC from "./components/MRC";
+import Usha from "./components/Usha";
 
 const page = () => {
   return (
@@ -32,17 +34,20 @@ const page = () => {
           image={"/ourWork/5.webp"}
         />
         <Extra
-          header={"Comprehensive Support"}
-          paragraph={`For example, in cases of gender-based violence or child welfare concerns, we provide immediate psychological support, facilitate fact-finding to aid legal proceedings, and connect individuals with necessary legal aid, ensuring a holistic approach to justice and well-being.`}
-          reverse={"reverse"}
-          image={"/ourWork/3.webp"}
-        />
-        <Extra
           header={"Reduced Trauma"}
           paragraph={`Our intervention helps survivors navigate complex situations with professional psychological support, reducing the long-term impact of trauma.`}
           reverse={"normal"}
           image={"/ourWork/2.webp"}
         />
+        <Extra
+          header={"Comprehensive Support"}
+          paragraph={`For example, in cases of gender-based violence or child welfare concerns, we provide immediate psychological support, facilitate fact-finding to aid legal proceedings, and connect individuals with necessary legal aid, ensuring a holistic approach to justice and well-being.`}
+          reverse={"reverse"}
+          image={"/ourWork/3.webp"}
+        />
+        <MRC />
+        <Usha />
+
         <Enhance />
         <Bonds />
         <StakeHolder />

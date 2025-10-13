@@ -17,9 +17,9 @@ const FiveGrids = [
       "This initiative looks at enhancing awareness of mental health and self-care at institutional levels in schools, colleges, shelter homes, hostels, jails, etc, as well as at the community level in SHGs, survivor forums, etc through talks, dance and IEC material. We have created a module for training community volunteers, known as mann sathis, to ensure ownership, empowerment and sustainability for awareness work within communities.",
   },
   {
-    header: "Employee Wellbeing",
+    header: "Community and Employee Wellbeing",
     paragraph:
-      "Through its commitment to employee wellbeing, Jan Sahas Empowerment Society ensures all staff and their family members have access to counseling services. We have also conducted stress-management and self-care workshops in both structured and informal formats, and have created a survey to assess employee wellbeing.",
+      "Through its commitment to community and employee wellbeing, Jan Sahas Social Empowerment Society ensures all staff and their family members have access to counseling services. We have also conducted stress-management and self-care workshops in both structured and informal formats, and have created a survey to assess wellbeing.",
   },
   {
     header: "Research & Resource Development",

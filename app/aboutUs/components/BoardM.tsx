@@ -23,7 +23,7 @@ Driven by a strong sense of social justice, his legal work bridges expertise wit
   },
   {
     name: "Jyoti Choudhary",
-    img: "/members/JyotiChoudhary.png",
+    img: "/members/JyotiChoudhary.webp",
     designation: "Social Outreach Coordinator",
     about: `
       Jyoti Choudhary has worked in the social sector for over 12 years, focusing on the prevention of violence against women and girls. She has provided critical legal support to affected women, children, and their families, advocating for their rights and safety within both legal and social systems.
@@ -31,7 +31,7 @@ Driven by a strong sense of social justice, his legal work bridges expertise wit
   },
   {
     name: "Kranti Khode",
-    img: "/members/KrantiP.svg",
+    img: "/members/Kranti.webp",
     designation: "Social Outreach Coordinator",
     about: `
     Kranti Khode’s vision is to build a society where dignity, justice, and equality are not privileges, but guaranteed fundamental rights for every individual, especially the most marginalized.
