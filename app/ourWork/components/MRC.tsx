@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 const Themes = [
   {
@@ -47,6 +49,52 @@ const Achievements = [
   },
 ];
 
+// Counter component for animated numbers (TypeScript safe)
+type CounterProps = { target: string | number; duration?: number };
+const Counter = ({ target, duration = 1200 }: CounterProps) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const handleScroll = () => {
+      const rect = node.getBoundingClientRect();
+      if (
+        rect.top < window.innerHeight &&
+        rect.bottom > 0 &&
+        !hasAnimated.current
+      ) {
+        hasAnimated.current = true;
+        let start = 0;
+        const end = parseFloat(target.toString().replace(/[^\d.]/g, ""));
+        const step = Math.max(1, Math.ceil(end / (duration / 16)));
+        const animate = () => {
+          start += step;
+          if (start >= end) {
+            setCount(end);
+          } else {
+            setCount(start);
+            requestAnimationFrame(animate);
+          }
+        };
+        animate();
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [target, duration]);
+
+  let display: string | number = count;
+  if (typeof target === "string" && target.includes("+"))
+    display = `${count.toLocaleString()}+`;
+  else if (typeof target === "string" && target.includes(","))
+    display = count.toLocaleString();
+  return <span ref={ref}>{display}</span>;
+};
+
 const MRC = () => {
   return (
     <section className="mx-auto max-w-6xl px-4 py-10">
@@ -69,7 +117,7 @@ const MRC = () => {
       {/* Hero Image */}
       <div className="mt-6 md:mt-8 relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-black/10 ring-1 ring-black/5">
         <Image
-          src="/media/slide2.webp"
+          src="/media/gallery/2/UseinMRCproject.webp"
           alt="Migrants Resilience Collaborative"
           fill
           className="object-cover object-center"
@@ -152,10 +200,10 @@ const MRC = () => {
         </h3>
         <div className=" flex justify-center items-center gap-5 py-5 flex-wrap">
           {Achievements.map((a, i) => (
-            <div key={i} className="text-center w-[250px] ">
-              <div className="bg-[#F5F5F5] flex flex-col gap-3 py-5 rounded-xl   md:h-[180px]">
+            <div key={i} className="text-center w-[400px] p-5">
+              <div className="bg-[#F5F5F5] flex items-center justify-center flex-col gap-3  rounded-xl   md:h-[180px]">
                 <div className="text-background/80 text-3xl sm:text-4xl md:text-6xl font-extrabold">
-                  {a.title}
+                  <Counter target={a.title} />
                 </div>
                 <div className="text-sm md:text-lg font-semibold text-background/80 opacity-60">
                   {a.text}

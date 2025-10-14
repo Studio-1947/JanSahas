@@ -35,7 +35,7 @@ const OurProgram = () => {
           <div className=" text-2xl lg:text-4xl font-semibold text-center lg:text-left text-background/80 lg:text-white px-4">
             Our Programs and Initiatives
           </div>
-          <p className=" px-4 text-white opacity-60 ">
+          <p className=" px-4 text-background/80 opacity-60 ">
             Strengthening Community Mental Health Support
           </p>
           <p className="text-xs md:text-sm  pt-6 lg:text-lg  text-center opacity-60 lg:text-left text-background/80 px-4 lg:text-white">
@@ -67,7 +67,7 @@ const OurProgram = () => {
                     "
                   >
                     <span className="mt-1 block h-2.5 w-2.5 rounded-full bg-primary/70 ring-4 ring-primary/10" />
-                    <div className="text-sm md:text-base font-medium text-background/80">
+                    <div className="text-sm md:text-base font-medium text-background/80 text-left">
                       {service}
                     </div>
                   </div>
@@ -78,11 +78,11 @@ const OurProgram = () => {
             {/* Impact Card */}
             <div className="group relative rounded-2xl p-6 bg-white/90 backdrop-blur border border-white/60 shadow-md ring-1 ring-black/5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
               <div className="flex items-start justify-between gap-3">
-                <div className="text-lg md:text-xl font-semibold text-background/80">
+                <div className="text-lg md:text-xl font-semibold text-background/80 !text-center lg:text-left">
                   Impact
                 </div>
               </div>
-              <p className="text-sm md:text-base leading-relaxed opacity-70 pt-3 text-background/80">
+              <p className="text-sm md:text-base leading-relaxed opacity-70 pt-3 text-background/80 text-center">
                 {IMPACT_TEXT}
               </p>
             </div>

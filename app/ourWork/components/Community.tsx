@@ -1,8 +1,12 @@
+import Image from "next/image";
 import React from "react";
 
 const Community = () => {
   return (
-    <div id="reports" className="justify-center items-center flex flex-col px-3 gap-4  py-10 overflow-none max-w-6xl mx-auto">
+    <div
+      id="reports"
+      className="justify-center items-center flex flex-col px-3 gap-4  py-10 overflow-none max-w-6xl mx-auto"
+    >
       <div className="text-background/80 text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
         Community Awareness on Mental Health
       </div>
