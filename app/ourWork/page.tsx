@@ -31,13 +31,13 @@ const page = () => {
           header={"Direct Referrals"}
           paragraph={`Women's police and juvenile police consistently refer cases requiring mental health counselling, fact-finding for sensitive situations, and legal support.`}
           reverse={"normal"}
-          image={"/ourWork/5.webp"}
-        />
+          image={"/media/gallery/3/MHP.webp"}
+          />
         <Extra
           header={"Reduced Trauma"}
           paragraph={`Our intervention helps survivors navigate complex situations with professional psychological support, reducing the long-term impact of trauma.`}
           reverse={"reverse"}
-          image={"/ourWork/2.webp"}
+          image={"/media/gallery/3/Anganwadi.webp"}
         />
         <Extra
           header={"Comprehensive Support"}
