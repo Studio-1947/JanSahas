@@ -8,8 +8,12 @@ const page = () => {
     <>
       <StartingImage />
       <div className="max-w-[1440px] mx-auto">
-        <WorkWithUs />
-        <Donate />
+        <div>
+          <WorkWithUs />
+        </div>
+        <div>
+          <Donate />
+        </div>
       </div>
     </>
   );

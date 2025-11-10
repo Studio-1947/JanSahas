@@ -4,22 +4,22 @@ const FiveGrids = [
   {
     header: "Mental Health Support Services",
     paragraph:
-      "To make mental healthcare more accessible and holistic, counselling centres have been set up in multiple districts, to provide individual, family and group counselling sessions. Counselling services are thus provided by either a psychologist, mental health social worker or barefoot counsellor, with an appropriate referral system wherever required.",
+      "To make mental health care more accessible and holistic, counselling centres have been set up in multiple districts, to provide individual, family and group counselling sessions. Counselling services are delivered by either a psychologist, mental health social worker or barefoot counsellor, with an appropriate referral mechanism wherever required.",
   },
   {
     header: "Training & Capacity Building",
     paragraph:
-      "The training vertical focuses on creating modules on psychological first aid, mental health literacy and trauma-informed care and conducting training sessions to enhance the capacity of frontline workers in Jan Sahas Empowerment Society and other organisations, government stakeholders and healthcare staff. We recently started the first batch of an online 3-month course on Barefoot Counselling for frontline workers. The first cohort had 25 organisations as participants.",
+      "The training vertical focuses on creating modules on psychological first aid, mental health literacy and trauma-informed care; and conducting training sessions to enhance the capacity of frontline workers within the organization as well as across  other organisations, government stakeholders, and healthcare staff. We recently started our first batch of an online 3-month course on Barefoot Counselling for frontline workers. The first cohort had 25 organisations as participants.",
   },
   {
     header: "Awareness Initiatives",
     paragraph:
-      "This initiative looks at enhancing awareness of mental health and self-care at institutional levels in schools, colleges, shelter homes, hostels, jails, etc, as well as at the community level in SHGs, survivor forums, etc through talks, dance and IEC material. We have created a module for training community volunteers, known as mann sathis, to ensure ownership, empowerment and sustainability for awareness work within communities.",
+      "This initiative looks at enhancing awareness of mental health and self-care at institutional levels - such as schools, colleges, shelter homes, hostels, correctional facilities, as well as at the community level - such as Self Help Groups, survivor forums. Our medium of engagement is through talks, creative art forms such as dance, and other informational and educational material. We have created a module for training community volunteers, known as mann sathis, to ensure ownership, empowerment and sustainability for awareness work within communities.",
   },
   {
-    header: "Community and Employee Wellbeing",
+    header: "Community and Staff Wellbeing",
     paragraph:
-      "Through its commitment to community and employee wellbeing, Jan Sahas Social Empowerment Society ensures all staff and their family members have access to counseling services. We have also conducted stress-management and self-care workshops in both structured and informal formats, and have created a survey to assess wellbeing.",
+      "Committed to both community and staff wellbeing, the organization ensures all staff and their family members have access to counseling services. We have also conducted stress-management and self-care workshops in both structured and informal formats, and have created a survey to assess wellbeing.",
   },
   {
     header: "Research & Resource Development",

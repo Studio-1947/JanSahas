@@ -27,11 +27,8 @@ const OurWork = () => {
             Our Work
           </div>
           <p className="text-xs md:text-sm pt-6 lg:text-lg opacity-90 max-w-6xl mx-auto px-4">
-            At JSSES, our work is deeply rooted in the communities we serve. We
-            implement a range of programs and initiatives designed to address
-            the multifaceted challenges faced by marginalized populations in
-            Madhya Pradesh. Our approach is holistic, empowering, and focused on
-            creating sustainable, systemic change from the ground up.
+            At JSSES, our work is deeply rooted in the communities we serve. We implement a range of programs and initiatives designed to address the interconnected social, economic, and mental health challenges faced by communities in Madhya Pradesh. Our approach is holistic, empowering, and focused on creating sustainable and strengthened systems from the ground up.
+
           </p>
         </div>
       </div>

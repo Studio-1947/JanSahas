@@ -11,19 +11,7 @@ const OurStory = () => {
           Our Story
         </div>
         <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg lg:text-left text-center">
-          Jan Sahas Social Empowerment Society (JSSES) was established in 2006
-          with a deep commitment to empowering the most disadvantageds
-          communities in Madhya Pradesh. Our journey began with the recognition
-          of systemic inequalities faced by marginalized populations,
-          particularly concerning mental health, caste-based discrimination,
-          gender-based violence, and socio-economic exclusion. Since our
-          inception, JSSES has acted as a vital platform and catalyst, working
-          closely with Dalit, tribal, and rural communities. Over the years, we
-          have evolved, focusing on strengthening community resilience, enabling
-          access to essential resources, and promoting self-reliance. Our
-          history is rooted in walking alongside communities, helping them
-          unlock their collective potential and drive lasting change from
-          within, always prioritizing the voices and needs of those we serve.
+          Jan Sahas Social Empowerment Society (JSSES) was established in 2006 in Madhya Pradesh with a deep commitment to empowering those that need the most support. Our journey began with the recognition of social and societal barriers  that affect people’s mental health and well-being, and hampers social and economic development. Since our inception, JSSES has acted as a vital platform and catalyst for community empowerment, working with underserved communities. Over the years, we have evolved to focus on strengthening community resilience, enabling access to essential services and resources, and promoting self-reliance. Our history is rooted in walking alongside communities, helping them unlock their collective potential and drive lasting change from within, always prioritizing the voices and needs of those we serve.
         </p>
       </div>
       <div className="lg:w-1/2 ">

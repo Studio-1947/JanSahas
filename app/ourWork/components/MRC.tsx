@@ -24,13 +24,13 @@ const KeyComponents = [
     subTitle:
       "We help migrant workers and their families access government schemes and benefits easily.",
     text1: "Awareness on social security schemes",
-    text2: "Registration through the Jan Saathi mobile app",
+    text2: "Registration through the Resilience Connect mobile app",
     text3: "Support in applications, documents, and grievance redressal",
     text4: "Training local volunteers to guide communities",
   },
   {
     title: "Worker Protection",
-    text: "We protect migrants from exploitation and ensure legal and emergency support.",
+    text: "We offer protection mechanisms for workers and ensure legal and emergency support.",
     text1: "Awareness sessions on safe migration and workers’ rights",
     text2: "A multi-lingual toll-free helpline for disputes and emergencies",
     text3: "Legal aid and redressal with support from police and government",
@@ -99,7 +99,7 @@ const MRC = () => {
   return (
     <section className="mx-auto max-w-6xl px-4 py-10">
       {/* Header */}
-      <header className="justify-center items-center flex flex-col px-3 gap-4  py-10 overflow-none max-w-6xl mx-auto">
+      <header className="justify-center items-center flex flex-col px-3 gap-4  pt-10 overflow-none max-w-6xl mx-auto">
         <h2 className="text-background/80 text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
           Migrants Resilience Collaborative
         </h2>
@@ -115,7 +115,7 @@ const MRC = () => {
       </header>
 
       {/* Hero Image */}
-      <div className="mt-6 md:mt-8 relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-black/10 ring-1 ring-black/5">
+      <div className="mt-6 md:mt-6 relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-black/10 ring-1 ring-black/5">
         <Image
           src="/media/gallery/2/UseinMRCproject.webp"
           alt="Migrants Resilience Collaborative"

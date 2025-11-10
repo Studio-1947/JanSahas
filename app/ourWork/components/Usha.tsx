@@ -16,14 +16,14 @@ const Usha = () => {
   return (
     <section className="mx-auto max-w-6xl px-4 py-10">
       {/* Header */}
-      <header className="justify-center items-center flex flex-col px-3 gap-4  py-10 overflow-none max-w-6xl mx-auto">
-        <div className="text-background/80 text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
+      <header className="justify-center items-center flex flex-col px-3 gap-4 overflow-none max-w-6xl mx-auto">
+        <div className="text-background/80 text-2xl md:text-3xl lg:text-4xl font-semibold text-center py-5">
           USHA Silai School Program
         </div>
       </header>
 
       {/* Intro */}
-      <p className="text-xs opacity-60 lg:text-lg text-background/80 md:text-sm text-center py-5">
+      <p className="text-xs opacity-60 lg:text-lg text-background/80 md:text-sm text-center ">
         The Usha Silai School Program is a nationwide, community-driven rural
         initiative. The aim of this social initiative is to teach women the
         skills of sewing and tailoring, and to help them set up their own

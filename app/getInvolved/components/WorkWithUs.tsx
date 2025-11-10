@@ -6,10 +6,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Sections = [
   {
     header:
-      "Are you passionate about mental health, women's empowerment, or social justice?",
-  },
-  {
-    header:
       "Do you wish to contribute your skills and time to a meaningful cause?",
   },
 ];
@@ -90,7 +86,10 @@ const WorkWithUs = () => {
           </div>
 
           {/* Vacancies / CTA */}
-          <div id="vacancies" className="group relative rounded-2xl p-6 backdrop-blur border shadow-md ring-1 ring-black/5 flex items-center justify-center">
+          <div
+            id="vacancies"
+            className="group relative rounded-2xl p-6 backdrop-blur border shadow-md ring-1 ring-black/5 flex items-center justify-center"
+          >
             <div className="flex flex-col items-start gap-4">
               <div className="text-xl font-bold text-background/80">
                 Vacancies
