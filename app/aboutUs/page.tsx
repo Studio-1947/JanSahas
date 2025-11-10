@@ -18,22 +18,22 @@ const pages = () => {
         <div className="py-4 lg:py-12 ">
           <OurStory />
         </div>
-        <div className="py-4">
+        <div className="py-4 lg:py-12">
           <OurMisson />
         </div>
-        <div className="py-4">
+        <div className="py-4 lg:py-12">
           <KeyObjectives />
         </div>
-        <div className="py-4">
+        <div className="py-4 lg:py-12">
           <Approach />
         </div>
-        <div className="p-4">
+        <div className="py-4 lg:py-12">
           <Impact />
         </div>
-        <div className="">
+        <div className="py-4 lg:py-12">
           <WhereWW />
         </div>
-        <div className="">
+        <div className="py-4 lg:py-12">
           <BoardM />
         </div>
       </div>

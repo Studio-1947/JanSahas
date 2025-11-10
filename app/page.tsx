@@ -14,20 +14,20 @@ export default function Home() {
         <Hero />
       </div>
       <div className=" px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto flex flex-col gap-5">
-        <div className="pt-4">
+        <div className="py-4 lg:py-16">
           <WhoWeAre />
         </div>
         <div>
           <ICarousel images={images} />
         </div>
-        <div>
+        <div className="py-4 lg:py-16">
           <WhatWeDo />
         </div>
-        <div>
+        <div className="py-4 lg:py-16">
           <KeyInterventions />
         </div>
-        <div>
-           <TestimonialsSection />
+        <div className="py-4 lg:py-16">
+          <TestimonialsSection />
         </div>
       </div>
     </div>

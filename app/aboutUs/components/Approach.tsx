@@ -4,22 +4,22 @@ const FiveGrids = [
   {
     header: "Community-Led Model",
     paragraph:
-      "A key feature of our work is involving survivors, grassroots leaders, and community representatives directly in our decision-making process. This ensures that those whose voices were traditionally suppressed are not only heard but also play a guiding role in shaping mental health systems and all our initiatives.",
+      "A key feature of our work is involving survivors, grassroots leaders, and community representatives directly in our decision-making process. This ensures that those whose voices were traditionally unheard now lead and guide the  shaping of mental health systems and all our initiatives.",
   },
   {
-    header: "Strenghtening mental health support",
+    header: "Strengthening mental health support",
     paragraph:
       "Working towards improving the mental well-being of rural women and children through accessible services.",
   },
   {
     header: "Prioritizing survivors and communities",
     paragraph:
-      "Ensuring that the needs and voices of survivors and communities are at the center of our intiatives.",
+      "Ensuring that the needs and voices of survivors and communities are at the center of our initiatives.",
   },
   {
     header: "Empowering women through livelihood initiatives",
     paragraph:
-      "Supporting women's financial like Usha Silai and other opportunities.",
+      "Supporting women's economic empowerment through initiatives like Usha Silai and other livelihood opportunities.",
   },
   {
     header: "Driving long-term systemic impact",
@@ -29,7 +29,7 @@ const FiveGrids = [
   {
     header: "Driving Women’s Growth",
     paragraph:
-      "Partnering effectively with goverment bodies, civil society organizations, and community leaders for collective impact.",
+      "Partnering effectively with government bodies, civil society organizations, and community leaders for collective impact.",
   },
 ];
 

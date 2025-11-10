@@ -1,5 +1,4 @@
 import ImageGallery from "../components/ImageGallery";
-import PdfViewer from "../components/PDFViewer";
 
 export const metadata = {
   title: "Mental Health — Media",

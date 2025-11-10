@@ -8,7 +8,7 @@ const SERVICES = [
 ];
 
 const IMPACT_TEXT =
-  "Significantly increased mental health awareness in rural areas, leading to a positive shift in perspectives and encouraging help-seeking behaviour. Collaboration with local authorities like women's police and juvenile police has led to direct referrals for counselling and support.";
+  "Significantly increased mental health awareness in rural areas, leading to a positive shift in perspectives and encouraging help-seeking behaviour. Collaboration with local authorities like women's police and special juvenile police unit has led to direct referrals for counselling and support.";
 
 const OurProgram = () => {
   return (

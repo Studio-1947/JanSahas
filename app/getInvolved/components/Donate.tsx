@@ -7,7 +7,7 @@ const SUPPORTS = [
   "Mental health counselling sessions for rural women and children.",
   "Skill-building workshops for women's livelihood initiatives like Usha Silai.",
   "Development and dissemination of vital educational materials in remote villages.",
-  "Advocacy efforts for the rights of migrant workers and other vulnerable groups.",
+  "Efforts to ensure access to rights and opportunities for migrant workers and other underserved communities.",
 ];
 
 const Donate = () => {
@@ -19,10 +19,9 @@ const Donate = () => {
         </div>
         <p className="text-xs md:text-sm opacity-80 pt-6 lg:text-lg text-background/80 text-center px-4 sm:px-10">
           Your financial contribution directly fuels our programs and
-          initiatives, enabling us to reach more marginalized individuals and
-          strengthen communities. Every donation, no matter the size, makes a
-          significant impact on mental health support, women&#39;s livelihoods,
-          and the promotion of equal rights.
+          initiatives, enabling us to reach more underserved communities. Every
+          donation, no matter the size, makes a significant impact on mental
+          health support, community support, and women&apos;s livelihoods.
         </p>
       </div>
 

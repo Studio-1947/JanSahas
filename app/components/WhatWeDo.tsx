@@ -16,17 +16,17 @@ const WhatWeDo = () => {
             What we do?
           </p>
           <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg">
-            In our learnings across the years, we’ve developed a comprehensive
+            In our learnings across the years, we have developed a comprehensive
             model of mental health, that involves multiple stakeholders
             including community members, government and non-governmental
             agencies, educational and healthcare institutions, and other
-            frontline workers, and looks at mental health beyond individual
-            counselling. Our model incorporates systemic change, social support
-            and community care, and provides services through a mix of barefoot
-            and professional counsellors. We aim to address the barriers to
-            mental health brought up by the shortage of mental health
-            professionals, financial and geographical inaccessibility, and
-            stigma.
+            frontline workers, and looks at mental health care and support
+            beyond individual counselling. Our model incorporates systems
+            strengthening, social support and community care, and provides
+            services through a mix of barefoot and professional counsellors. We
+            aim to address the barriers to mental health brought up by the
+            shortage of mental health professionals, financial and geographical
+            inaccessibility, and stigma.
           </p>
         </div>
         <div className="flex gap-3  lg:justify-start justify-center">

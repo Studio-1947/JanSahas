@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const Community = () => {
@@ -11,15 +10,14 @@ const Community = () => {
         Community Awareness on Mental Health
       </div>
       <p className="text-xs opacity-60 lg:text-lg text-background/80 md:text-sm text-center ">
-        We work with the highly excluded communities, including survivors or
-        those who are at risk of mental health, gender-based violence, unsafe
-        migration, forced labour conditions, sexual exploitation and
-        trafficking. We recognize that the communities we work with, deal with
-        trauma in their day-to-day lives and are largely deprived of adequate
-        mental health care that they require in order to be back on their feet.
-        To bridge this gap, we have developed an in-house counselling unit with
-        an aim to foster resilience among our communities and ensure their
-        access to mental health care at grass-roots level.
+        We work with individuals facing challenges related to mental well-being,
+        survivors of violence, and other socially and economically marginalised
+        communities. We recognize that many community members we work with
+        experience psychosocial stress and limited access to support systems. To
+        address this, we have developed an in-house counselling unit with an aim
+        to foster resilience among our communities, promote emotional
+        well-being, and connecting individuals to care and support services at
+        the grassroots level.
       </p>
     </div>
   );
