@@ -11,7 +11,7 @@ export default function ReportCard({ report }: { report: Report }) {
       {/* Background image with next/image */}
       <div className="absolute inset-0">
         <Image
-          src={report.coverImage ?? "/reports/cover-placeholder.jpg"}
+          src={report.coverImage ?? "/getInvolved/img1.webp"}
           alt={report.title}
           fill // makes it cover the container
           className="object-cover transition-transform duration-300 group-hover:scale-105"

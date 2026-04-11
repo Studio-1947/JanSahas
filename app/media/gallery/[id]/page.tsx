@@ -4,6 +4,12 @@ import Image from "next/image";
 import { galleries } from "../data/galleries";
 import BackButton from "@/app/components/Back";
 
+export function generateStaticParams() {
+  return galleries.map((g) => ({
+    id: g.id,
+  }));
+}
+
 export default async function GalleryPage({
   params,
 }: {

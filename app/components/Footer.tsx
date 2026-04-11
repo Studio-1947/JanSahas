@@ -32,7 +32,7 @@ const Sections: Section[] = [
     items: [
       { label: "Our Team", href: "/aboutUs#board-members" },
       { label: "Careers", href: "/getInvolved#vacancies" },
-      { label: "Reports", href: "/media#AnnualReports" },
+      { label: "Reports", href: "/media#Reports" },
     ],
   },
   {

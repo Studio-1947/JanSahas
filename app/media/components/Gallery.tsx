@@ -5,7 +5,7 @@ import React from "react";
 const images = [
   {
     id: 1,
-    image: "/media/gallery/1/IMG_20221209_121911.webp",
+    image: "/media/gallery/1/IMG_20241028_115835.webp",
     title: "USHA Silai School",
   },
   {

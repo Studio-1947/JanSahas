@@ -6,11 +6,11 @@ import ReportsPage from "./reports/page";
 import MediaCard from "./components/MediaCard";
 
 const cards = [
-  {
-    id: 1,
-    title: "USHA Silai School training",
-    image: "/media/event1.webp",
-  },
+  // {
+  //   id: 1,
+  //   title: "USHA Silai School training",
+  //   image: "/media/event1.webp",
+  // },
   {
     id: 2,
     title: "Organisational Development Training",
@@ -45,9 +45,9 @@ const page = () => {
       <div className="py-10 max-w-[1440px] mx-auto">
         <div
           className="text-2xl lg:text-4xl font-semibold text-background/80 text-center "
-          id="AnnualReports"
+          id="Reports"
         >
-          Annual Reports
+          Reports
         </div>
         <div
           className="w-full flex justify-center items-center px-4"

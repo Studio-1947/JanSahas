@@ -36,7 +36,7 @@ const Usha = () => {
         {/* Responsive min-h for image on mobile, aspect ratio on md+ */}
         <div className="relative w-full min-h-[320px] md:aspect-[16/9]">
           <Image
-            src="/media/gallery/1/UseinUshaProject.webp"
+            src="/media/gallery/1/IMG_20241114_122957.webp"
             alt="Women training at the USHA Silai School Program"
             fill
             className="object-cover object-center"
