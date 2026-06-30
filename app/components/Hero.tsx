@@ -47,10 +47,6 @@ export default function Hero() {
               </button>
             </Link>
           </div>
-
-          <div className="mt-4 text-xs sm:text-sm opacity-80">
-            500+ Centers Available all over India
-          </div>
         </div>
       </div>
     </section>

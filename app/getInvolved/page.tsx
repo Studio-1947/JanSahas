@@ -5,7 +5,7 @@ import Donate from "./components/Donate";
 
 const page = () => {
   return (
-    <>
+    <div className="py-5">
       <StartingImage />
       <div className="max-w-[1440px] mx-auto">
         <div>
@@ -15,7 +15,7 @@ const page = () => {
           <Donate />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

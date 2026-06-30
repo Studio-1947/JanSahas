@@ -4,7 +4,7 @@ import React from "react";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="px-4 py-6 text-sm leading-6 text-gray-900 max-w-3xl mx-auto ">
+    <div className="px-4 py-5 text-sm leading-6 text-gray-900 max-w-3xl mx-auto ">
       <h1 className="text-lg font-semibold mb-4 text-left">
         POLICY ON PRIVACY AND DATA PROTECTION (JAN SAHAS SOCIAL EMPOWERMENT
         SOCIETY)

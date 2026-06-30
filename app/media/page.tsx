@@ -40,7 +40,7 @@ const cards = [
 
 const page = () => {
   return (
-    <div className="lg:pt-2">
+    <div className="py-5">
       <Top />
       <div className="py-10 max-w-[1440px] mx-auto">
         <div

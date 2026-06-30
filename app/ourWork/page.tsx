@@ -14,7 +14,7 @@ import Usha from "./components/Usha";
 
 const page = () => {
   return (
-    <div>
+    <div className="py-5">
       <OurWork />
       <div className=" px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto">
         <Community />
