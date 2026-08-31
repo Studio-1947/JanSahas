@@ -203,13 +203,21 @@ const Footer: React.FC<FooterProps> = ({ navItems = NAV_ITEMS }) => {
         {/* Bottom bar */}
         <div className="mt-8 sm:mt-12 text-xs sm:text-sm text-background/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <span>© {year} Jan Sahas. All Rights Reserved.</span>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <Link
               href="/privacy"
               className="hover:opacity-100 opacity-80 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded"
             >
               Privacy Policy
             </Link>
+            <a
+              href="https://www.1947.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-100 opacity-80 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded"
+            >
+              Designed by Studio 1947
+            </a>
           </div>
         </div>
       </div>
